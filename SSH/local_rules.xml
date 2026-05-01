@@ -1,0 +1,10 @@
+<group name="ssh_monitor,">
+  <rule id="100001" level="10">
+    <if_matched_sid>5712</if_matched_sid>
+    <same_source_ip />
+    <description>Possível ataque de força bruta SSH detectado do IP $(srcip)</description>
+    <mitre>
+      <id>T1110</id>
+    </mitre>
+  </rule>
+</group>
